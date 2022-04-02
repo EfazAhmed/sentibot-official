@@ -1,0 +1,128 @@
+.navbar-color {
+    background-color: #6610f2;
+}
+
+.navbar-brand {
+    font-size: 2em;
+}
+
+.navbar-nav > li{
+    padding-left:30px;
+    padding-right:30px;
+}
+
+.results-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.results-container h1 {
+    margin: 0px auto;
+    margin-top: 100px;
+    padding: 0px 50px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.results-container h2 {
+    margin: 0px auto;
+    padding: 0px 50px;
+    font-size: 30px;
+    text-align: center;
+    min-width: 200px;
+    max-width: 800px;
+}
+
+.results-container h3 {
+    margin: 100px auto;
+    font-size: 50px;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.results-container button {
+    padding: 10px 0px;
+    width: 200px;
+    margin: 50px auto;
+}
+
+.results-container .visuals {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    gap: 150px;
+}
+
+.results-container .graph {
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+
+.results-container .graph Canvas {
+    width: 500px;
+    height: 500px;
+    margin: 0px auto;
+}
+
+.results-container .chart {
+    justify-content: center;
+    text-align: center;
+    margin: auto 0px;
+}
+
+.results-container .chart Canvas {
+    width: 700px;
+    height: 500px;
+    margin: 0px auto;
+}
+
+
+footer div {
+    color: white;
+}
+
+footer div a {
+    text-decoration: None;
+}
+
+@media only screen and (max-width: 1450px){
+    .results-container .visuals {
+        flex-direction: column;
+        gap: 100px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .results-container h1 {
+        font-size: 25px;
+    }
+
+    .results-container .chart Canvas{
+        width: 300px;
+    }
+
+    .results-container .graph Canvas{
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .results-container h1 {
+        font-size: 20px;
+    }
+
+    .results-container .visuals {
+        gap: 25px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .results-container h1 {
+        font-size: 20px;
+    }
+}
+ 

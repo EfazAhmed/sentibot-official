@@ -1,0 +1,57 @@
+.navbar-color {
+    background-color: #6610f2;
+}
+
+.navbar-brand {
+    font-size: 2em;
+}
+
+.navbar-nav > li{
+    padding-left:30px;
+    padding-right:30px;
+}
+
+.main {
+    position: relative;
+    height: calc(95vh);
+    min-height: 1000px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form-container {
+    display: inline-block;
+    position: absolute;
+    margin: 0;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+}
+
+.form-control {
+    width: 400px;
+    margin: 20px;
+    border: 2px solid #292b2c;
+}
+
+.btn-primary {
+    background-color: #292b2c !important;
+    border-color: white !important;
+}
+
+footer div {
+    color: white;
+}
+
+footer div a {
+    text-decoration: None;
+}
+
+@media only screen and (max-width: 600px) {
+    .form-control {
+        width: 200px;
+    }
+}
+ 

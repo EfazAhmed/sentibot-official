@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/about.css">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='about.css') }}">
+    <title>SentiBot</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">SentiBot</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href={{url_for('home')}}>HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href={{url_for('about')}}>ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href={{url_for('team')}}>TEAM</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="first-title">
+        <h1>What is SentiBot?</h1>
+    </div>
+
+    <div class="purpose">
+        <p>By using a dataset of various user inputs categorized into emotion groups, 
+            we trained a computer model to correctly identify a user’s emotions based 
+            on their input. SentiBot will utilize the data model to output a relevant response 
+            for the user’s emotions, along with an emotion response reading in percentages.</p>
+        <img src="https://images.unsplash.com/photo-1575278220902-cdf1a07a0421?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80">
+    </div>
+
+    <div class="second-title">
+        <h1>What Does Our Data Look Like?</h1>
+    </div>
+
+    <div class="data">
+        <img src="https://images.unsplash.com/photo-1488229297570-58520851e868?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1769&q=80">
+        <p>By using multiple Kaggle datasets <a href="https://www.kaggle.com/datasets/pashupatigupta/emotion-detection-from-text">here</a> 
+            and <a href="https://www.kaggle.com/datasets/parulpandey/emotion-dataset">here</a>, we've trained a Random Forest Classification Model to create a bot that uses
+            sentiment analysis to output and display the range of emotions conveyed through user's input. The data
+            used to create the model was labeled correctly, but needed to be cleaned in order to attain
+            optimal results.
+        </p>
+    </div>
+
+    <div class="third-title">
+        <h1>Technologies</h1>
+    </div>
+
+    <div class="tech">
+        <div class="tech-item">
+            <img class="rounded-circle" src="https://www.kindpng.com/picc/m/159-1595848_python-logo-png-transparent-background-python-logo-png.png">
+            <h1>Python</h1>
+        </div>
+        <div class="tech-item">
+            <img class="rounded-circle" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png">
+            <h1>HTML</h1>
+        </div>
+        <div class="tech-item">
+            <img class="rounded-circle" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png">
+            <h1>CSS</h1>
+        </div>
+        <div class="tech-item">
+            <img class="rounded-circle" src="https://www.quantumsoftech.com/img/icons/JS.svg">
+            <h1>JavaScript</h1>
+        </div>
+        <div class="tech-item">
+            <img class="rounded-circle" src="https://www.seekpng.com/png/detail/875-8753366_flask-framework-logo-svg.png">
+            <h1>Flask</h1>
+        </div>
+    </div>
+
+    <div class="third-title">
+        <h1>Libraries</h1>
+    </div>
+
+    <div class="libraries">
+        <div class="lib-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1200px-Scikit_learn_logo_small.svg.png">
+        </div>
+        <div class="lib-item">
+            <img src="https://pandas.pydata.org/static/img/pandas_secondary.svg">
+        </div>
+        <div class="lib-item">
+            <img src="https://camo.githubusercontent.com/9be0208aa516b4d1976412d27e9f73d851ea253f8ee005a0b600939f841bba8b/68747470733a2f2f7777772e63686172746a732e6f72672f6d656469612f6c6f676f2d7469746c652e737667">
+        </div>
+    </div>
+    
+    <footer>
+      <div class="text-center p-4" style="background-color: rgba(41, 43, 44, 1.0);">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="sentibot.com">SentiBot</a>
+      </div>
+    </footer>
+    
+</body>
+</html>

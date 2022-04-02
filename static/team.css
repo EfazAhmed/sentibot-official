@@ -1,0 +1,89 @@
+.navbar-color {
+    background-color: #6610f2;
+}
+
+.navbar-brand {
+    font-size: 2em;
+}
+
+.navbar-nav > li{
+    padding-left:30px;
+    padding-right:30px;
+}
+
+.portrait {
+    width: 200px;
+    height: 200px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 75px 0px 75px 0px;
+}
+
+.title h1 {
+    font-size: 40px;
+}
+
+.title h2 {
+    font-size: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+    overflow: hidden;
+}
+
+.grid-item {
+    display: inline-block;
+    width: 350px;
+    height: 400px;
+    text-align: center;
+}
+
+.grid-item h1 {
+    font-size: 30px;
+    margin: 10px 0px 0px 0px;
+}
+
+.grid-item h2 {
+    font-size: 15px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 0px 10px;
+}
+
+.socials img {
+    width: 40px;
+    height: 40px;
+}
+
+footer div {
+    color: white;
+}
+
+footer div a {
+    text-decoration: None;
+}
+
+@media only screen and (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: auto;
+        gap: 100px;
+    }
+}
