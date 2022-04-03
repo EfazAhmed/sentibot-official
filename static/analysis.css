@@ -23,7 +23,7 @@
     margin: 0px auto;
     margin-top: 100px;
     padding: 0px 50px;
-    font-size: 40px;
+    font-size: 25px;
     text-align: center;
 }
 
@@ -97,9 +97,9 @@ footer div a {
 }
 
 @media only screen and (max-width: 900px) {
-    .results-container h1 {
+    /* .results-container h1 {
         font-size: 25px;
-    }
+    } */
 
     .results-container .chart Canvas{
         width: 300px;
@@ -111,9 +111,9 @@ footer div a {
 }
 
 @media only screen and (max-width: 750px) {
-    .results-container h1 {
+    /* .results-container h1 {
         font-size: 20px;
-    }
+    } */
 
     .results-container .visuals {
         gap: 25px;
@@ -121,8 +121,8 @@ footer div a {
 }
 
 @media only screen and (max-width: 600px) {
-    .results-container h1 {
+    /* .results-container h1 {
         font-size: 20px;
-    }
+    } */
 }
  

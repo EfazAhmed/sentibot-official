@@ -121,6 +121,7 @@
     margin-left: auto;
     margin-right: auto;
 }
+
 .tech-item h1{
     font-size: 25px;
     margin-top: 10px;
@@ -129,6 +130,10 @@
     left: 50%;
     transform: translate(-50%, 150%);
     width: 100%;
+}
+
+#t-2 {
+    margin-bottom: 200px;
 }
 
 footer div {
