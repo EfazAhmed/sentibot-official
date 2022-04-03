@@ -60,25 +60,25 @@ def analysis():
         probas[i] = round(temp, 2)
 
     outputs = {"joy": [
-            "you are happy"
+            "Happiness"
         ],
         "fear": [
-            "you are scared"
+            "Fear"
         ],
         "anger": [
-            "you are angry"
+            "Anger"
         ],
         "sadness": [
-            "you are sad"
+            "Sadness"
         ],
         "disgust": [
-            "you are disgusted"
+            "Disgust"
         ],
         "shame": [
-            "you are ashamed"
+            "Shameful"
         ],
         "guilt": [
-            "you are guilty"
+            "Guilt"
         ]
     }
 
