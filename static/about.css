@@ -11,130 +11,126 @@
     padding-right:30px;
 }
 
-.first-title {
+.grid-container {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    margin: 50px 0px 50px 0px;
+    font-family: 'Ubuntu';  
 }
 
-.first-title h1 {
-    font-size: 60px;
-}
-
-.purpose {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    margin-left: 150px;
-    margin-right: 150px;
-    justify-content: center;
-    text-align: center;
-}
-
-.purpose p{
-    font-size: 24px;
-    min-width: 500px;
-    text-align: left;
-}
-
-.purpose img {
-    display: inline-block;
-    height: 250px;
-    width: 375px;
-    margin-bottom: 75px;
-}
-
-.second-title {
+.grid-child {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
     justify-content: center;
-    margin-top: 50px;
-    padding-bottom: 50px;
-    background-color: #292b2c;
+    margin: 0px auto;
+    width: 100%;
+    min-height: 100vh;
 }
 
-.second-title h1 {
-    font-size: 60px;
+#purpose-section {
+    background-image: url("https://images.unsplash.com/photo-1636319146116-5f32436e899c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
+    background-image: url("https://images.unsplash.com/photo-1490730141103-6cac27aaab94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
+    background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1772&q=80");
+    background-image: url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
+    background-image: url("https://images.unsplash.com/photo-1622737133809-d95047b9e673?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80");
+    background-image: url("https://images.unsplash.com/photo-1639322537231-2f206e06af84?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80");
+    background-image: url("https://images.unsplash.com/photo-1639815188508-13f7370f664a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80");
+    background-image: url("https://images.unsplash.com/photo-1509023464722-18d996393ca8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
+    background-image: url("https://images.unsplash.com/photo-1520052205864-92d242b3a76b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1769&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#purpose-section .main-title {
     color: white;
-    margin-top: 50px;
+    text-shadow: 1px 1px 5px black;
 }
-
-.data {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    padding-left: 150px;
-    padding-right: 150px;
-    justify-content: center;
-    text-align: center;
-    background-color: #292b2c;
-}
-
-.data p{
-    font-size: 24px;
-    min-width: 500px;
-    text-align: left;
+#purpose-section p {
     color: white;
+    text-shadow: 1px 1px 5px black;
 }
 
-.data img {
-    display: inline-block;
-    height: 250px;
-    width: 375px;
-    margin-bottom: 75px;
+#data-section {
+    background-image: url("https://images.unsplash.com/photo-1508615121316-fe792af62a63?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
+    background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1772&q=80");
+    background-image: url("https://images.unsplash.com/photo-1603852174365-4cc41b475968?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1366&q=80");
+    background-image: url("https://images.unsplash.com/photo-1485140662179-98e1bcb8e974?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1669&q=80");
+    background-image: url("https://images.unsplash.com/photo-1510906594845-bc082582c8cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1744&q=80");
+    background-image: url("https://images.unsplash.com/photo-1449156733864-dd5471bb7427?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
+    background-image: url("https://images.unsplash.com/photo-1502465268963-9d929108b846?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1773&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#data-section .main-title {
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+#data-section p {
+    color: white;
+    text-shadow: 1px 1px 5px black;
 }
 
-.third-title {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    margin: 50px 0px 50px 0px;
+#tech-section {
+    background-image: url("https://images.unsplash.com/photo-1554227231-54aa5db01c51?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1776&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#tech-section .main-title {
+    color: white;
+    text-shadow: 3px 3px 15px black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#tech-section p {
+    color: white;
+    text-shadow: 3px 3px 15px black
 }
 
-.third-title h1 {
-    font-size: 60px;
-}
-
-.tech {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
+#tech-section .icons-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 100px;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 100px;
 }
 
-.tech-item {
+#tech-section .icons-card {
     display: flex;
     flex-direction: column;
+    gap: 25px;
     justify-content: center;
+    align-items: center;
+}
+
+#tech-section .icons-card img {
+    height: 70px
+}
+
+#tech-section .icons-card h1 {
+    color: black;
+    font-size: 20px;
+}
+
+#tech-section .main-title {
+    text-shadow: none;
+    color: black;
+}
+
+.main-title {
+    margin-bottom: 50px;
+    font-size: 60px;
+}
+
+.grid-child p {
     text-align: center;
-    position: relative;
+    font-size: 20px;
+    margin: 0px 200px;  
+    text-decoration: none;
 }
 
-.tech-item img {
-    width: 150px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.tech-item h1{
-    font-size: 25px;
-    margin-top: 10px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 150%);
-    width: 100%;
-}
-
-#t-2 {
-    margin-bottom: 200px;
-}
 
 footer div {
     color: white;
@@ -144,49 +140,21 @@ footer div a {
     text-decoration: None;
 }
 
-@media only screen and (max-width: 991px) {
-    .title h1{
-        font-size: 50px;
-        text-align: center;
-    }
-
-    .purpose {
-        flex-direction: column;
-        margin-left: 50px;
-        margin-right: 50px;
-        gap: 50px
-    }
-
-    .purpose p {
-        text-align: center;
-        min-width: 400px;
-    }
-
-    .purpose img {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .data {
-        flex-direction: column;
-        padding-left: 50px;
-        padding-right: 50px;
-        gap: 25px
-    }
-
-    .data p {
-        text-align: center;
-        padding-bottom: 100px;
-        min-width: 400px;
-    }
-
-    .data img {
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 50px;
-    }
-
-    .tech {
-        flex-direction: column;
+@media only screen and (max-width:1280px){
+    #tech-section .icons-section {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
+
+@media only screen and (max-width:900px){
+    #tech-section .icons-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width:500px){
+    #tech-section .icons-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+

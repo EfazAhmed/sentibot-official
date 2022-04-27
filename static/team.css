@@ -22,7 +22,7 @@
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    margin: 75px 0px 75px 0px;
+    margin: 0px 0px 75px 0px;
 }
 
 .title h1 {
@@ -33,12 +33,20 @@
     font-size: 20px;
 }
 
+.main-content {
+    background-image: url("https://images.unsplash.com/photo-1485216983937-749292830fcf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2996&q=80");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 75px;
+    padding-bottom: 150px;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
     align-items: center;
     justify-content: center;
-    margin-bottom: 150px;
     overflow: hidden;
 }
 

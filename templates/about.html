@@ -7,6 +7,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='about.css') }}">
     <title>SentiBot</title>
 </head>
@@ -33,7 +36,117 @@
         </div>
     </nav>
 
-    <div class="first-title">
+    <div class="grid-container">
+        <div class="grid-child" id="purpose-section">
+            <h1 class="main-title">PURPOSE</h1>
+            <p>
+                By using a dataset of various user inputs categorized into emotion groups, 
+                we trained a computer model to correctly identify a user’s emotions based 
+                on their input. SentiBot will utilize the data model to output a relevant response 
+                for the user’s emotions, along with an emotion response reading in percentages.
+            </p>
+        </div>
+        <div class="grid-child" id="data-section">
+            <h1 class="main-title">DATA</h1>
+            <p>By using multiple Kaggle datasets <a href="https://www.kaggle.com/datasets/pashupatigupta/emotion-detection-from-text">here</a> 
+                and <a href="https://www.kaggle.com/datasets/parulpandey/emotion-dataset">here</a>, we've trained a Random Forest Classification Model to create a bot that uses
+                sentiment analysis to output and display the range of emotions conveyed through user's input. The data
+                used to create the model was labeled correctly, but needed to be cleaned in order to attain
+                optimal results.
+            </p>
+        </div>
+        <div class="grid-child" id="tech-section">
+            <h1 class="main-title">TECH STACK</h1>
+            <div class="icons-section">
+                <div class="icons-card">
+                    <img class="rounded-circle" src="https://www.kindpng.com/picc/m/159-1595848_python-logo-png-transparent-background-python-logo-png.png">
+                    <h1>Python</h1>
+                </div>
+                <div class="icons-card">
+                    <img class="rounded-circle" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png">
+                    <h1>HTML</h1>
+                </div>
+                <div class="icons-card">
+                    <img class="rounded-circle" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png">
+                    <h1>CSS</h1>
+                </div>
+                <div class="icons-card">
+                    <img class="rounded-circle" src="https://www.quantumsoftech.com/img/icons/JS.svg">
+                    <h1>JavaScript</h1>
+                </div>
+                <div class="icons-card">
+                    <img class="rounded-circle" src="https://www.seekpng.com/png/detail/875-8753366_flask-framework-logo-svg.png">
+                    <h1>Flask</h1>
+                </div>
+                <div class="icons-card">
+                    <img class="" src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg">
+                    <h1>Bootstrap 5</h1>
+                </div>
+                <div class="icons-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1200px-Scikit_learn_logo_small.svg.png">
+                    <h1>Scikit-Learn</h1>
+                </div>
+                <div class="icons-card">
+                    <img src="https://pandas.pydata.org/static/img/pandas_secondary.svg">
+                    <h1>Pandas</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="grid-child">
+            <h1 class="main-title">TECH STACK</h1>
+            <div class="tech-scroll">
+                <div class="tech-container">
+                    <img class="rounded-circle" src="https://www.kindpng.com/picc/m/159-1595848_python-logo-png-transparent-background-python-logo-png.png">
+                    <h1 class="tech-title">Python</h1>
+                    <img class="rounded-circle" src="https://www.kindpng.com/picc/m/159-1595848_python-logo-png-transparent-background-python-logo-png.png">
+                    <h1 class="tech-title">Python</h1>
+                </div>
+                <div class="tech-container">
+                    <img class="rounded-circle" src="https://www.kindpng.com/picc/m/159-1595848_python-logo-png-transparent-background-python-logo-png.png">
+                    <h1 class="tech-title">Python</h1>
+                    <img class="rounded-circle" src="https://www.kindpng.com/picc/m/159-1595848_python-logo-png-transparent-background-python-logo-png.png">
+                    <h1 class="tech-title">Python</h1>
+                </div>
+                <div class="tech-container">
+                    <img class="rounded-circle" src="https://www.kindpng.com/picc/m/159-1595848_python-logo-png-transparent-background-python-logo-png.png">
+                    <h1 class="tech-title">Python</h1>
+                    <img class="rounded-circle" src="https://www.kindpng.com/picc/m/159-1595848_python-logo-png-transparent-background-python-logo-png.png">
+                    <h1 class="tech-title">Python</h1>
+                </div>
+                <div class="tech-container">
+                    <img class="rounded-circle" src="https://www.kindpng.com/picc/m/159-1595848_python-logo-png-transparent-background-python-logo-png.png">
+                    <h1 class="tech-title">Python</h1>
+                    <img class="rounded-circle" src="https://www.kindpng.com/picc/m/159-1595848_python-logo-png-transparent-background-python-logo-png.png">
+                    <h1 class="tech-title">Python</h1>
+                </div>
+                <div class="tech-container">
+                    <img class="rounded-circle" src="https://www.kindpng.com/picc/m/159-1595848_python-logo-png-transparent-background-python-logo-png.png">
+                    <h1 class="tech-title">Python</h1>
+                    <img class="rounded-circle" src="https://www.kindpng.com/picc/m/159-1595848_python-logo-png-transparent-background-python-logo-png.png">
+                    <h1 class="tech-title">Python</h1>
+                </div>
+                <div class="tech-container">
+                    <img class="rounded-circle" src="https://www.kindpng.com/picc/m/159-1595848_python-logo-png-transparent-background-python-logo-png.png">
+                    <h1 class="tech-title">Python</h1>
+                    <img class="rounded-circle" src="https://www.kindpng.com/picc/m/159-1595848_python-logo-png-transparent-background-python-logo-png.png">
+                    <h1 class="tech-title">Python</h1>
+                </div>
+                <div class="tech-container">
+                    <img class="rounded-circle" src="https://www.kindpng.com/picc/m/159-1595848_python-logo-png-transparent-background-python-logo-png.png">
+                    <h1 class="tech-title">Python</h1>
+                    <img class="rounded-circle" src="https://www.kindpng.com/picc/m/159-1595848_python-logo-png-transparent-background-python-logo-png.png">
+                    <h1 class="tech-title">Python</h1>
+                </div>
+
+            </div> -->
+            
+            
+        </div>
+    </div>
+    
+
+    <!-- <div class="first-title">
         <h1>What is SentiBot?</h1>
     </div>
 
@@ -43,9 +156,9 @@
             on their input. SentiBot will utilize the data model to output a relevant response 
             for the user’s emotions, along with an emotion response reading in percentages.</p>
         <img src="https://images.unsplash.com/photo-1575278220902-cdf1a07a0421?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80">
-    </div>
+    </div> -->
 
-    <div class="second-title">
+    <!-- <div class="second-title">
         <h1>What Does Our Data Look Like?</h1>
     </div>
 
@@ -57,9 +170,9 @@
             used to create the model was labeled correctly, but needed to be cleaned in order to attain
             optimal results.
         </p>
-    </div>
+    </div> -->
 
-    <div class="third-title">
+    <!-- <div class="third-title">
         <h1>Tech Stack</h1>
     </div>
 
@@ -100,7 +213,7 @@
             <img src="https://pandas.pydata.org/static/img/pandas_secondary.svg">
             <h1>Pandas</h1>
         </div>
-    </div>
+    </div> -->
     
     <footer>
       <div class="text-center p-4" style="background-color: rgba(41, 43, 44, 1.0);">
