@@ -49,37 +49,9 @@
     margin: 50px auto;
 }
 
-.results-container .visuals {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    gap: 150px;
+#chart {
+   margin: 0px 10px 0px 10px;
 }
-
-.results-container .graph {
-    justify-content: center;
-    text-align: center;
-    align-content: center;
-}
-
-.results-container .graph Canvas {
-    width: 500px;
-    height: 500px;
-    margin: 0px auto;
-}
-
-.results-container .chart {
-    justify-content: center;
-    text-align: center;
-    margin: auto 0px;
-}
-
-.results-container .chart Canvas {
-    width: 700px;
-    height: 500px;
-    margin: 0px auto;
-}
-
 
 footer div {
     color: white;

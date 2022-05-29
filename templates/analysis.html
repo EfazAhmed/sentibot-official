@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="/static/analysis.css">
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='analysis.css') }}">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
     <title>SentiBot</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">SentiBot</a>
+          <a class="navbar-brand" href={{url_for('home')}}>SentiBot</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -40,111 +41,11 @@
 
         <h3>{{ prediction }}</h3>
 
-        <div class="visuals">
-        
-            <div class="chart">
-                <canvas id=barChart></canvas>
-                <script>
-                  var ctx = document.getElementById("barChart").getContext("2d");
-                  var doughnutChart = new Chart(ctx, {
-                    type: "bar",
-                    data: {
-                      labels: {{ labels | safe }},
-                      datasets: [
-                        {
-                          data: {{ values | safe}},
-                          backgroundColor: [
-                            'rgb(255, 221, 0)',
-                            'rgb(125, 63, 152)',
-                            'rgb(190, 0, 39)',
-                            'rgb(0, 121, 193)',
-                            'rgb(132, 189, 0)',
-                            'rgb(255, 153, 51)',
-                            'rgb(200,200,200)'
-                          ],
-                        }
-                      ]
-                    },
-                    options: {
-                      indexAxis: 'y',
-                      responsive: false,
-                      plugins: {
-                        legend: {
-                          display:false,
-                        }
-                      },
-                      scales: {
-                        y: {
-                          title: {
-                            display: true,
-                            text: 'Emotions',
-                            color: 'rgb(0,0,0)',
-                            font: {
-                              size: 15
-                            }
-                          },
-                          ticks: {
-                              color: 'rgb(0,0,0)'
-                          }
-                        },
-                        x: {
-                          title: {
-                            display: true,
-                            text: 'Percentages',
-                            color: 'rgb(0,0,0)',
-                            font: {
-                              size: 15
-                            }
-                          },
-                          ticks: {
-                              color: 'rgb(0,0,0)'
-                          }
-                        }
-                      }
-                    }
-                  });
-                </script>   
-            </div>
-          
-            <div class="graph">
-                <canvas id=doughnutChart>
-                <script>
-                var ctx = document.getElementById("doughnutChart").getContext("2d");
-                var doughnutChart = new Chart(ctx, {
-                    type: "doughnut",
-                    data: {
-                    labels: {{ labels | safe }},
-                    datasets: [
-                        {
-                        label: "Data Points",
-                        data: {{ rel_values | safe}},
-                        backgroundColor: [
-                            'rgb(255, 221, 0)',
-                            'rgb(125, 63, 152)',
-                            'rgb(190, 0, 39)',
-                            'rgb(0, 121, 193)',
-                            'rgb(132, 189, 0)',
-                            'rgb(255, 153, 51)',
-                            'rgb(200,200,200)'
-                        ]
-                        }
-                    ]
-                    },
-                    options: {
-                    responsive: false,
-                    plugins: {
-                        legend: {
-                        display:true,
-                        labels: {
-                            color: 'rgb(0, 0, 0)'
-                        },
-                        position: 'left'
-                        }
-                    }
-                    }
-                });
-                </script>
-            </div>
+        <div id="chart" class="chart">
+          <script type='text/javascript'>
+            var graphs = {{graphJSON | safe}};
+            Plotly.plot('chart',graphs,{});
+          </script>
         </div>
 
         <form action={{url_for('home')}}>
